@@ -9,7 +9,7 @@ class GuessingGame {
     }
 
     guess() {
-		this.last=Math.trunc((this.min+this.max)/2);
+		this.last=this.min+Math.trunc((this.max-this.min)/2);
 		return this.last;
     }
 
