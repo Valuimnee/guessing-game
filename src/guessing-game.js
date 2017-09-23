@@ -9,12 +9,12 @@ class GuessingGame {
     }
 
     guess() {
-		this.last=this.min+Math.floor((this.max-this.min)/2);
+		this.last=this.min+Math.trunc((this.max-this.min)/2);
 		return this.last;
     }
 
     lower() {
-		this.max=this.last-1;
+		this.max=this.last;
     }
 
     greater() {
